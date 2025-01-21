@@ -6,7 +6,7 @@ export function TestimonialsSection() {
         <section className="w-full py-24 px-8">
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-16">
-              <p className="text-indigo-600 font-medium mb-2">Testimonials</p>
+              <p className="text-[#6115bd] font-medium mb-2">Testimonials</p>
               <h2 className="text-4xl font-bold mb-4">We have worked with</h2>
               <h2 className="text-4xl font-bold">thousands of amazing people</h2>
             </div>

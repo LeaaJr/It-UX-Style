@@ -6,10 +6,9 @@ export default function Example() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2">
           <div className="max-w-xl lg:max-w-lg">
-            <h2 className="text-4xl font-semibold tracking-tight text-white">Subscribe to our newsletter</h2>
+            <h2 className="text-4xl font-semibold tracking-tight text-white">Iscriviti alla nostra newsletter</h2>
             <p className="mt-4 text-lg text-gray-300">
-              Nostrud amet eu ullamco nisi aute in ad minim nostrud adipisicing velit quis. Duis tempor incididunt
-              dolore.
+              Iscriviti al nostro sito per ricevere le ultime offerte, lanci e novità nella tua email !!
             </p>
             <div className="mt-6 flex max-w-md gap-x-4">
               <label htmlFor="email-address" className="sr-only">
@@ -20,15 +19,15 @@ export default function Example() {
                 name="email"
                 type="email"
                 required
-                placeholder="Enter your email"
+                placeholder="Inserisci la tua email"
                 autoComplete="email"
                 className="min-w-0 flex-auto rounded-md bg-white/5 px-3.5 py-2 text-base text-white outline outline-1 -outline-offset-1 outline-white/10 placeholder:text-gray-500 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500 sm:text-sm/6"
               />
               <button
-                type="submit"
-                className="flex-none rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
+                type="invia"
+                className="flex-none rounded-md bg-[#6115bd] px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-[#a264ed] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
               >
-                Subscribe
+                Iscriviti
               </button>
             </div>
           </div>
@@ -37,18 +36,18 @@ export default function Example() {
               <div className="rounded-md bg-white/5 p-2 ring-1 ring-white/10">
                 <CalendarDaysIcon aria-hidden="true" className="size-6 text-white" />
               </div>
-              <dt className="mt-4 text-base font-semibold text-white">Weekly articles</dt>
+              <dt className="mt-4 text-base font-semibold text-white">Articoli settimanali</dt>
               <dd className="mt-2 text-base/7 text-gray-400">
-                Non laboris consequat cupidatat laborum magna. Eiusmod non irure cupidatat duis commodo amet.
+                Ricevi in ​​anticipo le nuove uscite per effettuare un preacquisto
               </dd>
             </div>
             <div className="flex flex-col items-start">
               <div className="rounded-md bg-white/5 p-2 ring-1 ring-white/10">
                 <HandRaisedIcon aria-hidden="true" className="size-6 text-white" />
               </div>
-              <dt className="mt-4 text-base font-semibold text-white">No spam</dt>
+              <dt className="mt-4 text-base font-semibold text-white">Niente spam</dt>
               <dd className="mt-2 text-base/7 text-gray-400">
-                Officia excepteur ullamco ut sint duis proident non adipisicing. Voluptate incididunt anim.
+                  Non riceverai email di spam e potrai cancellarti quando vuoi.
               </dd>
             </div>
           </dl>
@@ -61,39 +60,7 @@ export default function Example() {
               'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
           }}
           className="aspect-[1155/678] w-[72.1875rem] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30"
-        />
-
-<footer className="w-full bg-[#0B0F17] text-gray-400 py-16 px-8">
-          <div className="max-w-7xl mx-auto">
-            <div className="mb-12">
-              <div className="w-12 h-12 mb-4">
-                <svg viewBox="0 0 24 24" className="text-blue-500 w-full h-full">
-                  <path
-                    style={{
-                      clipPath:
-                        'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
-                    }}
-                    className="aspect-[1155/678] w-[72.1875rem] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30"
-                  />
-                </svg>
-              </div>
-              <p className="text-lg max-w-md">
-                Making the world a better place through constructing elegant
-                hierarchies.
-              </p>
-              <div className="flex gap-6 mt-6">
-                {/* Aquí puedes agregar los íconos de redes sociales */}
-              </div>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
-              {/* Aquí van los enlaces de Solutions, Support, Company, Legal */}
-            </div>
-            <div className="pt-8 border-t border-gray-800">
-              <p>© 2024 Your Company, Inc. All rights reserved.</p>
-            </div>
-          </div>
-        </footer>
-        
+        />      
       </div>
     </div>
   )

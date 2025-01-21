@@ -3,7 +3,7 @@ import { Facebook, Instagram, Twitter, Github, Youtube } from "lucide-react";
 
 export function Footer() {
   return (
-    <div className="relative isolate overflow-hidden bg-gray-900 py-16 sm:py-24 lg:py-32">
+    <div className="relative isolate overflow-hidden bg-gray-900 py-8 sm:py-24 lg:py-8">
       {/* Fondo con gradiente y desenfoque */}
       <div aria-hidden="true" className="absolute left-1/2 top-0 -z-10 -translate-x-1/2 blur-3xl xl:-top-6">
         <div
@@ -34,16 +34,16 @@ export function Footer() {
               hierarchies.
             </p>
             <div className="flex gap-6 mt-6">
-              <Facebook className="w-6 h-6" />
-              <Instagram className="w-6 h-6" />
-              <Twitter className="w-6 h-6" />
-              <Github className="w-6 h-6" />
-              <Youtube className="w-6 h-6" />
+              <Facebook className="w-6 h-6 hover:text-white" />
+              <Instagram className="w-6 h-6 hover:text-white" />
+              <Twitter className="w-6 h-6 hover:text-white" />
+              <Github className="w-6 h-6 hover:text-white" />
+              <Youtube className="w-6 h-6 hover:text-white" />
             </div>
           </div>
 
-          {/* Aquí agregamos Solutions y Support */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+          {/* Aquí ajustamos la disposición de Solutions, Support y Legal en una sola fila */}
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
             {/* Solutions Section */}
             <div>
               <h3 className="text-white font-semibold mb-4">Solutions</h3>
@@ -97,30 +97,31 @@ export function Footer() {
                 </li>
               </ul>
             </div>
+
+            {/* Legal Section */}
+            <div>
+              <h3 className="text-white font-semibold mb-4">Legal</h3>
+              <ul className="space-y-3">
+                <li>
+                  <a href="#" className="hover:text-white">
+                    Terms of service
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="hover:text-white">
+                    Privacy policy
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="hover:text-white">
+                    License
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
 
-          <div>
-            <h3 className="text-white font-semibold mb-4">Legal</h3>
-            <ul className="space-y-3">
-              <li>
-                <a href="#" className="hover:text-white">
-                  Terms of service
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-white">
-                  Privacy policy
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-white">
-                  License
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div className="pt-8 border-t border-gray-800">
+          <div className="pt-4 border-t border-gray-800">
             <p>© 2024 Your Company, Inc. All rights reserved.</p>
           </div>
         </div>
