@@ -1,3 +1,6 @@
+import React from "react"
+import ImgProd from "../Components/Img"
+
 export default function Example() {
     return (
       <div className="py-64 relative overflow-hidden bg-white">
@@ -23,39 +26,16 @@ export default function Example() {
                     <div className="flex items-center space-x-6 lg:space-x-8">
                       <div className="grid shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
                         <div className="h-64 w-44 overflow-hidden rounded-lg sm:opacity-0 lg:opacity-100">
-                          <img
-                            alt=""
-                            src="https://tailwindui.com/plus/img/ecommerce-images/home-page-03-hero-image-tile-01.jpg"
-                            className="size-full object-cover"
-                          />
+                        <img
+                          alt="Model"
+                          src={ImgProd.ModelBW}
+                          className="size-full object-cover"
+                        />
                         </div>
                         <div className="h-64 w-44 overflow-hidden rounded-lg">
                           <img
                             alt=""
-                            src="https://tailwindui.com/plus/img/ecommerce-images/home-page-03-hero-image-tile-02.jpg"
-                            className="size-full object-cover"
-                          />
-                        </div>
-                      </div>
-                      <div className="grid shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
-                        <div className="h-64 w-44 overflow-hidden rounded-lg">
-                          <img
-                            alt=""
-                            src="https://tailwindui.com/plus/img/ecommerce-images/home-page-03-hero-image-tile-03.jpg"
-                            className="size-full object-cover"
-                          />
-                        </div>
-                        <div className="h-64 w-44 overflow-hidden rounded-lg">
-                          <img
-                            alt=""
-                            src="https://tailwindui.com/plus/img/ecommerce-images/home-page-03-hero-image-tile-04.jpg"
-                            className="size-full object-cover"
-                          />
-                        </div>
-                        <div className="h-64 w-44 overflow-hidden rounded-lg">
-                          <img
-                            alt=""
-                            src="https://tailwindui.com/plus/img/ecommerce-images/home-page-03-hero-image-tile-05.jpg"
+                            src={ImgProd.ModelWblack}
                             className="size-full object-cover"
                           />
                         </div>
@@ -64,14 +44,37 @@ export default function Example() {
                         <div className="h-64 w-44 overflow-hidden rounded-lg">
                           <img
                             alt=""
-                            src="https://tailwindui.com/plus/img/ecommerce-images/home-page-03-hero-image-tile-06.jpg"
+                            src={ImgProd.ModelRubFac}
                             className="size-full object-cover"
                           />
                         </div>
                         <div className="h-64 w-44 overflow-hidden rounded-lg">
                           <img
                             alt=""
-                            src="https://tailwindui.com/plus/img/ecommerce-images/home-page-03-hero-image-tile-07.jpg"
+                            src={ImgProd.ModelSent}
+                            className="size-full object-cover"
+                          />
+                        </div>
+                        <div className="h-64 w-44 overflow-hidden rounded-lg">
+                          <img
+                            alt=""
+                            src={ImgProd.ModelBRouse}
+                            className="size-full object-cover"
+                          />
+                        </div>
+                      </div>
+                      <div className="grid shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
+                        <div className="h-64 w-44 overflow-hidden rounded-lg">
+                          <img
+                            alt=""
+                            src={ImgProd.ModelEblue}
+                            className="size-full object-cover"
+                          />
+                        </div>
+                        <div className="h-64 w-44 overflow-hidden rounded-lg">
+                          <img
+                            alt=""
+                            src={ImgProd.ModelParRub}
                             className="size-full object-cover"
                           />
                         </div>

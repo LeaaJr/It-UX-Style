@@ -5,6 +5,7 @@ import PromoSection from '../Sections/PromoSections';
 import NewSletterSection from '../Sections/NewsletterSections';
 import Footer from '../Components/Footer';
 import { TestimonialsSection } from "../Sections/TestimonialsSection";
+import ImgProd from "../Components/Img";
 
 
 const products = [
@@ -12,9 +13,9 @@ const products = [
       id: 1,
       name: 'Earthen Bottle',
       href: '#',
-      price: '$48',
-      imageSrc: 'https://tailwindui.com/plus/img/ecommerce-images/category-page-04-image-card-01.jpg',
-      imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
+      price: '$89,95',
+      imageSrc: ImgProd.Trench,
+      imageAlt: 'TRENCH RELAXED FIT',
     },
     {
       id: 2,
