@@ -7,6 +7,7 @@ import Women from './Pages/Women';
 import Men from './Pages/Men';
 import LogIn from './Forms/LogIn';
 import CreateAccount from './Forms/CreateAccount';
+import ProductOverviews from './Pages/ProductOverviews'
 
 
 
@@ -23,6 +24,7 @@ function App() {
       <Route path="/men" element={<Men />} />
       <Route path="/LogIn" element={<LogIn />} />
       <Route path="/CreateAccount" element={<CreateAccount />} />
+      <Route path="/ProductOverviews" element={<ProductOverviews />} />
     </Routes>
   </Router>
  </>
