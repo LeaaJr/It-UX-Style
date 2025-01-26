@@ -1,4 +1,3 @@
-
 import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './Components/Navbar';
@@ -7,7 +6,7 @@ import Women from './Pages/Women';
 import Men from './Pages/Men';
 import LogIn from './Forms/LogIn';
 import CreateAccount from './Forms/CreateAccount';
-import ProductOverviews from './Pages/ProductOverviews'
+import ProductOverviews from './Pages/ProductOverviews';
 
 
 
