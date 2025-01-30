@@ -1,4 +1,3 @@
-import { Turtle } from "lucide-react";
 import ImgProd from "./Img";
 
 const ProductList = [
@@ -158,7 +157,7 @@ const ProductList = [
     images: [
       { src: ImgProd.CappottoRWF, alt: 'Image 1' },
       { src: ImgProd.CappottoRWB, alt: 'Image 2' },
-      { src: ImgProd.CappottoRWFC, alt: 'Image 3' },
+      { src: ImgProd.CappottoRWC, alt: 'Image 3' },
       { src: ImgProd.CappottoRWModel, alt: 'Image 4' },
     ],
   },

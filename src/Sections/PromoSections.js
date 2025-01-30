@@ -1,5 +1,7 @@
 import React from "react"
 import ImgProd from "../Components/Img"
+import { Link } from "react-router-dom"
+import NowCollection from "../Pages/NowCollection"
 
 export default function Example() {
     return (
@@ -82,12 +84,12 @@ export default function Example() {
                   </div>
                 </div>
   
-                <a
-                  href="#"
+                <Link
+                  to="/NowCollection"
                   className="inline-block rounded-md border border-transparent bg-[#3d304cff] px-8 py-3 text-center font-medium text-white hover:bg-[#6115bd]"
                 >
                   Acquista la collezione
-                </a>
+                </Link>
               </div>
             </div>
           </div>

@@ -148,7 +148,7 @@ export default function Navbar() {
                   <span className="sr-only">Your Company</span>
                   <img
                     alt="Logo"
-                    src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=600"
+                    src={ImgProd.ModLog}
                     className="h-8 w-auto"
                   />
                 </Link>

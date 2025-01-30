@@ -9,6 +9,7 @@ import CreateAccount from './Forms/CreateAccount';
 import ProductOverviews from './Pages/ProductOverviews';
 import ShoppingCarts from './Pages/ShoppingCarts';
 import { CartProvider } from './Context/CartContext';
+import NowCollection from './Pages/NowCollection';
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
           <Route path="/CreateAccount" element={<CreateAccount />} />
           <Route path="/ProductOverviews" element={<ProductOverviews />} />
           <Route path="/ShoppingCarts" element={<ShoppingCarts />} />
+          <Route path="/NowCollection" element={<NowCollection />} />
         </Routes>
       </Router>
     </CartProvider>

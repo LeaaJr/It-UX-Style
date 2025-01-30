@@ -7,14 +7,13 @@ export function TestimonialsSection() {
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-16">
               <p className="text-[#6115bd] font-medium mb-2">Testimonials</p>
-              <h2 className="text-4xl font-bold mb-4">We have worked with</h2>
-              <h2 className="text-4xl font-bold">thousands of amazing people</h2>
+              <h2 className="text-4xl font-bold mb-4">Abbiamo lavorato con</h2>
+              <h2 className="text-4xl font-bold">migliaia di persone straordinarie</h2>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               <div className="bg-white p-6 rounded-lg">
                 <p className="text-gray-600 mb-6">
-                  "Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam
-                  delectus nihil. Aut enim doloremque et ipsum."
+                  "Adoro il modo in cui questo negozio offre un'ampia varietà di stili sia per occasioni formali che casual. I capi non sono solo eleganti, ma sono anche super comodi. Sono sicuramente diventati la mia opzione preferita per rinnovare il mio guardaroba."
                 </p>
                 <div className="flex items-center">
                   <img
@@ -30,9 +29,7 @@ export function TestimonialsSection() {
               </div>
               <div className="bg-white p-6 rounded-lg">
                 <p className="text-gray-600 mb-6">
-                  "Excepteur consectetur deserunt id incididunt veniam mollit
-                  officia sint qui aute duis sit cillum. Reprehenderit fugiat amet
-                  aliqua in commodo minim sunt laborum."
+                  "Sono un fan dei look casual e sportivi e questo negozio ha sempre le migliori opzioni. Gli abiti non sono solo di buona qualità, ma seguono anche le ultime tendenze. Non sono mai a corto di opzioni per il mio stile!."
                 </p>
                 <div className="flex items-center">
                   <img
@@ -48,9 +45,7 @@ export function TestimonialsSection() {
               </div>
               <div className="bg-white p-6 rounded-lg">
                 <p className="text-gray-600 mb-6">
-                  "Voluptas quos itaque ipsum in voluptatem est. Iste eos
-                  blanditiis repudiandae. Earum deserunt enim molestiae ipsum
-                  perferendis."
+                  "Faccio sempre fatica a trovare vestiti che si adattino al mio stile, ma da quando ho scoperto questo negozio il mio guardaroba è migliorato moltissimo. La qualità è incredibile e gli abiti sono molto moderni. Trovo sempre qualcosa che mi faccia sentire unica e le consegne sono velocissime!"
                 </p>
                 <div className="flex items-center">
                   <img
