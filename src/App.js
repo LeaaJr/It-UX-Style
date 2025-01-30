@@ -7,26 +7,26 @@ import Men from './Pages/Men';
 import LogIn from './Forms/LogIn';
 import CreateAccount from './Forms/CreateAccount';
 import ProductOverviews from './Pages/ProductOverviews';
-
+import ShoppingCarts from './Pages/ShoppingCarts';
+import { CartProvider } from './Context/CartContext';
 
 
 function App() {
   return (
- <>
-  <Router>
-   
-    <Navbar />
-
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/women" element={<Women />} />
-      <Route path="/men" element={<Men />} />
-      <Route path="/LogIn" element={<LogIn />} />
-      <Route path="/CreateAccount" element={<CreateAccount />} />
-      <Route path="/ProductOverviews" element={<ProductOverviews />} />
-    </Routes>
-  </Router>
- </>
+    <CartProvider>
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/women" element={<Women />} />
+          <Route path="/men" element={<Men />} />
+          <Route path="/LogIn" element={<LogIn />} />
+          <Route path="/CreateAccount" element={<CreateAccount />} />
+          <Route path="/ProductOverviews" element={<ProductOverviews />} />
+          <Route path="/ShoppingCarts" element={<ShoppingCarts />} />
+        </Routes>
+      </Router>
+    </CartProvider>
   );
 }
 

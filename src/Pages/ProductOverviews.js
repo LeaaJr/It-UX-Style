@@ -5,12 +5,14 @@ import { useLocation } from 'react-router-dom';
 import { StarIcon } from '@heroicons/react/20/solid';
 import { Radio, RadioGroup } from '@headlessui/react';
 import { Link } from 'react-router-dom';
+import { useCart } from '../Context/CartContext';  // Asegúrate de que la ruta es correcta
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ');
 }
 
 export default function ProductOverviews() {
+  const { addToCart } = useCart();
   const location = useLocation();
   const product = location.state?.product; // Asegurémonos de que estamos recibiendo el producto correcto
 
@@ -18,6 +20,7 @@ export default function ProductOverviews() {
   const [selectedSize, setSelectedSize] = useState(product?.sizes[0]);
 
   console.log("Producto recibido: ", product); // Esto debería mostrar el producto en consola
+
 
   // Verifica que el producto está presente
   if (!product) {
@@ -161,13 +164,14 @@ export default function ProductOverviews() {
               </fieldset>
             </div>
 
-            {/* Add to bag */}
-            <button
-              type="submit"
-              className="mt-10 flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-8 py-3 text-base font-medium text-white hover:bg-indigo-700 focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:outline-hidden"
-            >
-            Aggiungi
-            </button>
+          {/* Botón "Agregar al carrito" */}
+          <button
+          onClick={() => addToCart(product)}  // Agregar al carrito cuando se haga clic
+          type="submit"
+          className="mt-10 flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-8 py-3 text-base font-medium text-white hover:bg-indigo-700 focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:outline-hidden"
+        >
+          Aggiungi
+        </button>
           </div>
         </div>
       </div>

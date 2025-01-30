@@ -1,0 +1,112 @@
+    * {
+        margin: 0;
+        padding: 0;
+        background-color: transparent;
+    }
+    .main {
+        height: 100vh;
+        width: 100vw;
+        position: relative;
+        margin-top: 80px; /* Ajusta este valor según lo que necesites */
+    }
+    .d1 {
+    position: absolute;
+    background-image: url('../Image/ModelBan1.jpg');
+    background-size: cover;
+    height: 30vh;
+    width: 15vw;
+    background-position: 0 50%;
+    box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.8);
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    animation: dd1 10s 1; /* Eliminar animation-delay */
+}
+
+.d2 {
+    position: absolute;
+    background-image: url(https://static.zara.net/assets/public/3937/c7c6/69414bf19320/a28923efa6dd/image-landscape-default-fill-8de9e1cb-d815-477f-be20-ba3841266813-default_0/image-landscape-default-fill-8de9e1cb-d815-477f-be20-ba3841266813-default_0.jpg?ts=1737563868851&w=2596);
+    background-size: cover;
+    height: 50vh;
+    width: 25vw;
+    background-position: -20vw 50%;
+    left: 10vw;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    animation: dd2 10s 2; /* Eliminar animation-delay */
+}
+
+.d3 {
+    position: absolute;
+    background-image: url('../Image/ModelBan2.jpg');
+    background-size: cover;
+    overflow: hidden;
+    height: 100vh;
+    width: 40vw;
+    left: 25vw;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.8);
+    background-position: -85vw 60%;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 3;
+    animation: dd3 10s 2; /* Eliminar animation-delay */
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    height: 100%; /* Asegura que ocupe todo el alto disponible en el contenedor */
+    text-align: center; /* Alinea el texto al centro (para h1 y p) */
+}
+
+.d4 {
+    position: absolute;
+    overflow: hidden;
+    background-image: url(https://static.zara.net/assets/public/9e08/2e38/6dd54adabec3/026281465842/06427401903-ult3/06427401903-ult3.jpg?ts=1737557523077&w=710);
+    background-size: cover;
+    height: 80vh;
+    width: 25vw;
+    left: 60vw;
+    background-position: -72vw 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    animation: dd4 10s 2; /* Eliminar animation-delay */
+}
+
+    
+    @keyframes dd1 {
+        0% {
+        }
+        50% {
+        width: 95vw;
+        }
+    }
+    @keyframes dd12 {
+        0% {
+        }
+        50% {
+        background-position: Calc(0vw - 40px) 50%;
+        }
+    }
+    @keyframes dd2 {
+        0% {
+        }
+        50% {
+        background-position: Calc(-10vw - 40px) 50%;
+        }
+    }
+    @keyframes dd3 {
+        0% {
+        }
+        50% {
+        background-position: Calc(-35vw - 40px) 50%;
+        }
+    }
+    @keyframes dd4 {
+        0% {
+        }
+        50% {
+        background-position: Calc(-70vw - 40px) 50%;
+        }
+    }
+    
