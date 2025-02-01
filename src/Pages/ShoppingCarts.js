@@ -1,17 +1,17 @@
 import React from 'react';
 import { Dialog, DialogBackdrop, DialogPanel, DialogTitle } from '@headlessui/react';
 import { XMarkIcon } from '@heroicons/react/24/outline';
-import { useCart } from '../Context/CartContext'; // Ajusta la ruta según tu estructura
+import { useCart } from '../Context/CartContext'; // Asegúrate de que la ruta esté correcta
 import { Link } from 'react-router-dom';
 
-export default function ShoppingCart({ open, onClose }) {
-  const { cartItems, removeFromCart } = useCart();
+const ShoppingCart = ({ open, onClose }) => {
+  const { cartItems, removeFromCart, getTotal } = useCart();
 
-  // Calcular el subtotal
-  const subtotal = cartItems.reduce((total, item) => {
-    const price = parseFloat(item.price.replace('€', ''));
-    return total + price * item.quantity;
-  }, 0);
+  const subtotal = getTotal(); // Obtener el total
+
+  // Asegurarnos de que el total es un número válido
+  const formattedTotal = isNaN(subtotal) ? 0 : subtotal.toFixed(2);
+  
 
   return (
     <Dialog open={open} onClose={onClose} className="relative z-10">
@@ -87,13 +87,13 @@ export default function ShoppingCart({ open, onClose }) {
                 {cartItems.length > 0 && (
                   <div className="border-t border-gray-200 px-4 py-6 sm:px-6">
                     <div className="flex justify-between text-base font-medium text-gray-900">
-                      <p>Subtotal</p>
-                      <p>€{subtotal.toFixed(2)}</p>
+                    <p>Subtotal</p>
+                    <p>€{formattedTotal}</p> {/* Mostrar el total formateado */}
                     </div>
                     <p className="mt-0.5 text-sm text-gray-500">Shipping and taxes calculated at checkout.</p>
                     <div className="mt-6">
                       <Link
-                        href="#"
+                        to="/Checkout"
                         className="flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-6 py-3 text-base font-medium text-white shadow-xs hover:bg-indigo-700"
                       >
                         Checkout
@@ -109,3 +109,5 @@ export default function ShoppingCart({ open, onClose }) {
     </Dialog>
   );
 }
+
+export default ShoppingCart;

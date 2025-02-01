@@ -25,8 +25,16 @@ export const CartProvider = ({ children }) => {
     setCartItems((prevItems) => prevItems.filter((item) => item.id !== id));
   };
 
+  // Calcular el total del carrito
+  const getTotal = () => {
+    return cartItems.reduce((total, item) => {
+      const price = parseFloat(item.price.replace('€', '')); // Asumiendo que el precio tiene el símbolo €
+      return total + price * item.quantity;
+    }, 0);
+  };
+
   return (
-    <CartContext.Provider value={{ cartItems, addToCart, removeFromCart }}>
+    <CartContext.Provider value={{ cartItems, addToCart, removeFromCart, getTotal }}>
       {children}
     </CartContext.Provider>
   );

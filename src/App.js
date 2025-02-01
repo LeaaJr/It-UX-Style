@@ -10,6 +10,7 @@ import ProductOverviews from './Pages/ProductOverviews';
 import ShoppingCarts from './Pages/ShoppingCarts';
 import { CartProvider } from './Context/CartContext';
 import NowCollection from './Pages/NowCollection';
+import Checkout from './Checkout/Checkout';
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
           <Route path="/ProductOverviews" element={<ProductOverviews />} />
           <Route path="/ShoppingCarts" element={<ShoppingCarts />} />
           <Route path="/NowCollection" element={<NowCollection />} />
+          <Route path="/Checkout" element={<Checkout />} />
         </Routes>
       </Router>
     </CartProvider>
